@@ -71,6 +71,7 @@ h1 {
   text-align: left;
   outline: 3px solid #666666;
   display: inline-block;
+  text-align: center;
 }
 button {
   background-color: white;
