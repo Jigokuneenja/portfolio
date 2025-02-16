@@ -90,5 +90,6 @@ button:hover {
   }
   .languages {
     max-width: calc(100% - 25px);
+    margin-left: 25px;
   }
 }
