@@ -83,3 +83,12 @@ button {
 button:hover {
   background-color: darkgreen;
 }
+@media(max-width:768px){
+  .roundedBox{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .languages {
+    max-width: calc(100% - 25px);
+  }
+}
