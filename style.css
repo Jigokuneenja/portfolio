@@ -132,4 +132,7 @@ button {
     margin-right: 25px;
     margin-left: 25px;
   }
+  .cursor{
+    background-color: #232323;
+  }
 }
