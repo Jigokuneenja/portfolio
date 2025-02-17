@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="transparent-layer"></div>
+    <div class="cursor"></div>
     <nav class="navBar">
       <div class="logo">Isaac Woods</div>
       <button onclick="showHome()">Home</button>
@@ -20,9 +22,15 @@
       <button onclick="showProjects()">Projects</button>
       <button onclick="showContactMe()">Contact Me</button>
     </nav>
-    <div id="home" style="block">
+    <div id="home" class="home" style="block">
       <div class="roundedBox">
         <div class="name">Isaac Woods</div>
+        <button onclick="">
+          <img src="images/gitHub.png" alt="" width="20" />
+        </button>
+        <button onclick="">
+          <img src="images/linkedIn.png" alt="" width="20" />
+        </button>
         <div class="body">
           I am a Full-Stack developer with an emphasis on Back-End development,
           currently attending Iowa State, pursuing a Software Engineering degree
@@ -58,6 +66,14 @@
         </div>
       </div>
       <h3>Most recent projects</h3>
+    </div>
+    <div id="about"></div>
+    <div id="pojects">
+      <div class="projects">
+        <div class="project">
+          <img src="images/Python.png" alt="" width="20" />
+        </div>
+      </div>
     </div>
     <div id="contactMe"></div>
     <script src="script.js"></script>
