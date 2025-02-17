@@ -1,8 +1,9 @@
 let currentPage = "home"
-let home = document.getElementById("home")
-let about = document.getElementById("about")
-let projects = document.getElementById("projects")
-let contactMe = document.getElementById("contactMe")
+const home = document.getElementById("home")
+const about = document.getElementById("about")
+const projects = document.getElementById("projects")
+const contactMe = document.getElementById("contactMe")
+const cursor = document.querySelector(".cursor");
 function showHome() {
   if (currentPage != "home") {
     home.style.display = "block"
@@ -19,7 +20,6 @@ function showAbout() {
     //projects.style.display = "none"
     //contactMe.style.display = "none"
     currentPage = "about"
-    console.log(currentPage);
   }
 }
 function showProjects() {
@@ -40,3 +40,10 @@ function showContactMe() {
     currentPage = "contactMe"
   }
 }
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+    /*if(e.clientX < 0 || e.clientX > screen.height || e.clientX == null){
+    	cursor.style.left = 0px;
+    }*/
+});
